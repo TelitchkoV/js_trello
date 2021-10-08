@@ -22,9 +22,12 @@ main{
     width: fit-content;
     height: fit-content;
     padding: 10px;
+    margin-top: 10px;
+
+    border: none;
     background-color: darkslategray;
     color: white;
-    margin-top: 10px;
+    border-radius: 12px;
 }
 .formT input{
     width: fit-content;
@@ -43,7 +46,20 @@ main{
     justify-content: start;
 }
 
-.cardT{
+.list{
     width: 180px;
     height: 50px;
+    
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    /* align-items: baseline; */
+
+    background-color: darkturquoise;
+}
+.list p{
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 10px;
 }
