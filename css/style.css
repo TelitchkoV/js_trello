@@ -1,0 +1,49 @@
+main{
+    width: 600px;
+    margin: 20px auto;
+}
+
+.formT, .deskT, .cardT{
+    border: 1px solid black;
+}
+
+
+.formT{
+    width: 300px;
+    height: 150px;
+    margin-bottom: 40px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+}
+.formT button{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    background-color: darkslategray;
+    color: white;
+    margin-top: 10px;
+}
+.formT input{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.deskT{
+    width: auto;
+    height: 350px;
+
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: start;
+}
+
+.cardT{
+    width: 180px;
+    height: 50px;
+}
