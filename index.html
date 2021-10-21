@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" defer src="js/script.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Trello</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" defer src="js/script.js"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Trello</title>
 </head>
 <body>
-    <main>
-        <div class="formT">
-            <label for="list-name" id="new-list">Новый список</label>
-            <input type="text" name="list-name" id="list-name" placeholder="Введите название">
-            <button id="btn-create-list">Создать список</button>
+  <main>
+    <section class="section trello">
+      <div class="topPart">
+        <div class="form__wrapper">
+          <label for="list-name" id="new-list">Новый список</label>
+          <input type="text" name="list-name" id="list-name" placeholder="Введите название">
+          <button id="btn-create-list" type="button">Создать список</button>
         </div>
-        <div class="deskT" id="desk">
-            <!-- <div class="list"><p>Пример карточки</p></div> -->
-        </div>
-        <script src="js/newScript.js"></script>
-    </main>
+        <button id="btn-clean" type="button" class="form__clean false">Очистить доску</button>
+      </div>
+      <div class="desk__wrapper" id="desk">
+        <!-- Карточки -->
+     </div>
+    </section>
+  </main>
 </body>
 </html>

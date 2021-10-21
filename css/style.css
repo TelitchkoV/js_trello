@@ -1,65 +1,159 @@
-main{
-    width: 600px;
-    margin: 20px auto;
+body{
+  margin: 0;
+  padding: 0;
+
+  background-color: #edfaff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+}
+:root{
+  --color-darkBlue: #2a748c;
 }
 
-.formT, .deskT, .cardT{
-    border: 1px solid black;
+
+/* ------------------------------------ */
+
+
+.trello{
+  width: 800px;
+  margin: 100px auto;
+}
+
+.topPart{
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+button{
+  font-family: 'Open Sans', sans-serif;
+
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+
+  border: none;
+  background-color: var(--color-darkBlue);
+  color: white;
+  border-radius: 12px;
+
+  transition: background-color 0.3s;
+}
+button:hover{
+  background-color: #3289a6;
+}
+button:active{
+  background-color: #225f73;
 }
 
 
-.formT{
-    width: 300px;
-    height: 150px;
-    margin-bottom: 40px;
 
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    justify-content: center;
-}
-.formT button{
-    width: fit-content;
-    height: fit-content;
-    padding: 10px;
-    margin-top: 10px;
+/* ------------------------------------ */
 
-    border: none;
-    background-color: darkslategray;
-    color: white;
-    border-radius: 12px;
-}
-.formT input{
-    width: fit-content;
-    height: fit-content;
-    padding: 10px;
-    margin-top: 10px;
+.topPart{
+  margin-bottom: 20px;
 }
 
-.deskT{
-    width: auto;
-    height: 350px;
+.form__wrapper, .desk__wrapper, .list{
+  border: 1px solid var(--color-darkBlue);
+  border-radius: 20px;
+  background-color: white;
+}
 
-    display: flex;
-    flex-direction: row;
-    padding: 20px;
-    justify-content: start;
+.form__wrapper{
+  width: 300px;
+  height: 150px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 20px;
+}
+
+#new-list{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+#list-name{
+  font-family: 'Open Sans', sans-serif;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  margin-top: 15px;
+}
+#btn-create-list{
+  margin-top: 15px;
+}
+
+.form__clean{
+  align-self: flex-end;
+}
+.form__clean.false{
+  background-color: #949494;
+}
+.form__clean.true{
+  background-color: var(--color-darkBlue);
+}
+.form__clean.true:hover{
+  background-color: #3289a6;
+}
+.form__clean.true:active{
+  background-color: #225f73;
+}
+
+
+/* ------------------------------------ */
+
+
+.desk__wrapper{
+  width: auto;
+  min-height: 350px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+
+  overflow: hidden;
+  gap: 20px;
 }
 
 .list{
-    width: 180px;
-    height: 50px;
-    
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    /* align-items: baseline; */
+  width: 180px;
+  height: fit-content;
 
-    background-color: darkturquoise;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: flex-start;
+
+  padding: 10px;
+  padding-top: 8px;
+  overflow: hidden;
+
+  background-color: #edfaff;
+  box-shadow: 4px 4px var(--color-darkBlue);
 }
-.list p{
-    margin: 0;
-    padding-top: 10px;
-    padding-left: 10px;
+.list__name{
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  padding-top: 2px;
+}
+.list__name--icon{
+  height: 16px;
+  width: auto;
+  padding-left: 10px;
+  padding-top: -5px;
+
+  filter: invert(39%) sepia(4%) saturate(5455%) hue-rotate(149deg) brightness(100%) contrast(96%);
 }
