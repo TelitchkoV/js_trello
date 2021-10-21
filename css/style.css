@@ -136,7 +136,6 @@ button:active{
   align-items: flex-start;
 
   padding: 10px;
-  padding-top: 8px;
   overflow: hidden;
 
   background-color: #edfaff;
@@ -147,13 +146,11 @@ button:active{
   padding: 0;
 
   font-size: 14px;
-  padding-top: 2px;
 }
 .list__name--icon{
   height: 16px;
   width: auto;
   padding-left: 10px;
-  padding-top: -5px;
 
   filter: invert(39%) sepia(4%) saturate(5455%) hue-rotate(149deg) brightness(100%) contrast(96%);
 }
